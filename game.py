@@ -531,7 +531,7 @@ while run:
     clock.tick(FPS)
     if start_game == False:
         #draw menu
-        screen.fill(BLACK)
+        screen.fill((12, 138, 50))
         #add buttons
         if start_button.draw(screen):
             start_game = True
