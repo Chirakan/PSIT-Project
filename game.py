@@ -492,7 +492,7 @@ class ScreenFade():
 
 #create screen fades
 intro_fade = ScreenFade(1, BLACK, 4)
-death_fade = ScreenFade(2, WHITE, 4)
+death_fade = ScreenFade(2, (113, 155, 203), 4)
 
 #create buttons
 start_button = button.Button(SCREEN_WIDTH // 2 - 130, SCREEN_HEIGHT // 2 - 150, start_img, 1)
