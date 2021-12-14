@@ -413,7 +413,7 @@ class ItemBox(pygame.sprite.Sprite):
         #check if the player has picked up item
         if pygame.sprite.collide_rect(self, player):
             #check what kind of box it was
-            if self.item_type == 'Health' and player.health < 100:
+            if self.item_type == 'Health':
                 player.health += 20
                 if player.health > player.max_health:
                     player.health = player.max_health
