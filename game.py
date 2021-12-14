@@ -183,7 +183,7 @@ class Archer(pygame.sprite.Sprite):
             self.direction = 1
         #jump
         if self.jump == True and self.in_air == False:
-            self.vel_y = -13
+            self.vel_y = -14
             self.jump = False
             self.in_air = True
         #apply gravity
@@ -492,7 +492,7 @@ class ScreenFade():
 
 #create screen fades
 intro_fade = ScreenFade(1, BLACK, 4)
-death_fade = ScreenFade(2, (113, 155, 203), 4)
+death_fade = ScreenFade(2, (113, 155, 203), 10)
 
 #create buttons
 start_button = button.Button(SCREEN_WIDTH // 2 - 130, SCREEN_HEIGHT // 2 - 150, start_img, 1)
