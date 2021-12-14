@@ -183,7 +183,7 @@ class Archer(pygame.sprite.Sprite):
             self.direction = 1
         #jump
         if self.jump == True and self.in_air == False:
-            self.vel_y = -14
+            self.vel_y = -13.5
             self.jump = False
             self.in_air = True
         #apply gravity
@@ -349,7 +349,7 @@ class World():
                         decoration = Decoration(img, x * TILE_SIZE, y * TILE_SIZE)
                         decoration_group.add(decoration)
                     elif tile == 16:#create player
-                        player = Archer('player1', x * TILE_SIZE, y * TILE_SIZE, 1.65, 5)
+                        player = Archer('player1', x * TILE_SIZE, y * TILE_SIZE, 0.95, 5)
                         health_bar = Healthbar(10, 10, player.health, player.health)
                     elif tile == 17:#create enemies
                         enemy = Archer('enemy', x * TILE_SIZE, y * TILE_SIZE, 1.65, 2)
